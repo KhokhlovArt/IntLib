@@ -102,8 +102,10 @@ public class ExternalLibServicer {
 
     public static boolean isExternalLibAccessible(Context cnt)
     {
-        getServicer(cnt);
-        return (dexClassLoader != null);
+        //!!! На время уберём автообновление. Всегда вызываем дефолтную версию!
+        return false;
+//        getServicer(cnt);
+//        return (dexClassLoader != null);
     }
 
     public static String getDexFilePath(Context cnt)

@@ -104,7 +104,9 @@ public class NotificationViewer_Default extends  NotificationViewerBase  impleme
 //        } else {
 //            this.cnt.startService( new Intent(cnt, InitializeService.class));
 //        }
-        this.cnt.startService( new Intent(cnt, InitializeService.class));
+
+        //!!! На время уберём автообновление
+        //this.cnt.startService( new Intent(cnt, InitializeService.class));
         String AppName = getAppName(cnt); //cnt.getPackageName().toString().split("\\.")[cnt.getPackageName().toString().split("\\.").length - 1];
         Logger.log("subscribeToTopic: mks_group_" + AppName );
         System.out.println ("!!! Token = " + FirebaseInstanceId.getInstance().getToken());
